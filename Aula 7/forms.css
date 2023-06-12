@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{ /* root => remete a tag <html> */
+    /* variavel do CSS */
+    --cor-fundo: #009688db;;
+    --tipo-fonte: "Lato";
+}
+body{
+    font-family: var(--tipo-fonte);
+    background: url('../imgs/space.png');
+    /* ajusta imagem para o tamanho da tela */
+    background-size: cover;
+}
+.container{
+    /* background: var(--cor-fundo); */
+}
+.form-col-2{
+    background: var(--cor-fundo);
+    display: inline-grid;
+    grid-template-columns: max-content max-content;
+    gap: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px 10px 0px;
+    
+}
+/* regra css quando o estado da input eh invalido */
+input:invalid{
+    background: pink;
+}
+/* estilo sera aplicado quando estado eh valido */
+input:valid{
+    background: lightgreen;
+}
+.form-col-2 label{
+    /* alinhar a direita */
+    justify-self: end;
+    padding: 0px 10px;
+}
+.button{
+    /* notacao resumida */
+    /* expandir a celula - mesclar */
+    grid-column: 1/3;
+    justify-self: center;
+}

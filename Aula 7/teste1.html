@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aula 7 - Teste 1</title>
+    
+    <link href="teste1-css.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+
+        <label>Avaliacao: </label>
+            Ruim<input type="radio" value="ruim" name="avaliacao">
+            Bom<input type="radio" value="bom" name="avaliacao">
+            Otimo<input type="radio" value="otimo" name="avaliacao"><br>
+
+            <label>Avaliacao: </label>
+            Ruim<input type="checkbox" value="ruim" name="avaliacao">
+            Bom<input type="checkbox" value="bom" name="avaliacao">
+            Otimo<input type="checkbox" value="otimo" name="avaliacao"><br>
+
+        <form class="form-col-2">
+            <label for="nome">Nome: </label> <input required minlength="2" maxlength="50" type="text" name="nome" id="nome">
+            <label for="email">Email: </label> <input type="email" name="email" id="email">
+            <label for="senha">Senha: </label> <input required type="password" name="senha" id="senha">
+            <label for="idade">Idade: </label> <input required min="18" max="99" type="number" name="idade" id="idade">
+            
+            <label>Estado: </label>
+            <select required >
+                <option>PR</option>
+                <option>RJ</option>
+                <option>MG</option>
+            </select>
+            
+            <label>Avaliacao: </label><br>
+            <label>Ruim</label><input type="radio" value="ruim" name="avaliacao">
+            <label>Bom</label><input type="radio" value="bom" name="avaliacao">
+            <label>Otimo</label><input type="radio" value="otimo" name="avaliacao">
+
+            <label>Linguagens: </label><br>
+            <label>C++</label><input type="checkbox" value="ruim" name="avaliacao">
+            <label>HTML</label><input type="checkbox" value="bom" name="avaliacao">
+            <label>JavaScript</label><input type="checkbox" value="otimo" name="avaliacao">
+
+            <label for="comentario">Comentarios:</label> <textarea rows="5" id="comentario"></textarea>
+            
+            <input class="botao" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

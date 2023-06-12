@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Aula 7 - Exercicio 3</title>
+
+        <style>
+            body {
+                background-image: url("space.png");
+            }
+
+            h3 {
+                text-align: center;
+                color: white;
+            }
+
+            label {
+                color: cadetblue;
+                margin-right: 10px;
+            }
+
+            input,select {
+                width: 400px;
+                border: darkblue solid 3px;
+            }
+
+            div {
+                margin-bottom: 10px;
+            }
+
+            #data {
+                width: 360px;
+            }
+
+            #idade {
+                width: 50px;
+            }
+
+            #ddd {
+                width: 30px;
+            }
+
+            #tele,#input {
+                width: 100px;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 500px;
+                width: 500px;
+                border: cadetblue solid 3px;
+                background: rgba(0, 0, 0, 0.3);
+                margin: 50px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+            <form class="container">
+                <h3>Cadastro usuário</h3>
+                
+                <div>
+                <label for="nome"><b>Nome</b></label>
+                <input required type="text" minlength="3" maxlength="30" placeholder="Felix Moraes Silveira" id="nome">
+                </div>
+
+                <div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="fms@test.org" id="email">
+                </div>
+
+                <div>
+                    <label for="data"><b>Nascimento</b></label>
+                    <input type="date" id="data">
+                </div>
+
+                <div>
+                    <label for="pais">Pais</label>
+                    <select id="pais">
+                        <option>Selecione</option>
+                        <option>Brasil</option>
+                        <option>Estados Unidos</option>
+                        <option>Japão</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="idade">Idade</label>
+                    <input type="text" minlength="1" maxlength="3" id="idade">
+
+                    <label for="ddd">DDD</label>
+                    <input type="text" minlength="1" maxlength="5" id="ddd" placeholder="22">
+
+                    <label for="tele">Telefone</label>
+                    <input type="text" minlength="8" maxlength="14" id="tele">
+                </div>
+
+                <input type="submit" value="Adicionar" id="input">
+            </form>
+    </body>
+</html>

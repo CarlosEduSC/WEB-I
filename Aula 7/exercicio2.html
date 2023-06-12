@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Aula 7 - Exercicio 2</title>
+
+        <style>
+            .container {
+                display: inline-grid;
+                width: 270px;
+                background: lightgrey;
+                grid-template-columns: 260px;
+                padding: 20px;
+            }
+
+            .input {
+                margin-bottom: 15px;
+            }
+
+            #nome {
+                width: 120px;
+            }
+
+            #sobrenome {
+                width: 100px;
+            }
+
+            #dia {
+                width: 50px;
+            }
+
+            #mes {
+                width: 100px;
+            }
+
+            #ano {
+                width: 70px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form class="container">
+            <label for="nome"><b>Nome</b></label>
+            <div>
+            <input type="text" minlength="3" maxlength="20" placeholder="Nome" id="nome" class="input">
+            <input type="text" minlength="3" maxlength="30" placeholder="Sobrenome" id="sobrenome" class="input">
+            </div>
+
+            <label for="usuario"><b>Escolher nome de usuário</b></label>
+            <input type="text" minlength="3" maxlength="10" id="usuario" class="input">
+
+            <label for="senha"><b>Criar uma senha</b></label>
+            <input type="password" minlength="4" maxlength="20" id="senha" class="input">
+
+            <label for="senha2"><b>Confirme sua senha</b></label>
+            <input type="password" minlength="4" maxlength="20" id="senha2" class="input">
+
+            <label for="dia"><b>Data de nascimento</b></label>
+            <div>
+            <input type="text" minlength="1" maxlength="2" placeholder="Dia" id="dia" class="input">
+            <select id="mes" class="input">
+                <option>Mês</option>
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubro</option>
+                <option>Novembro</option>
+                <option>Dezembro</option>
+            </select>
+            <input type="text" minlength="4" maxlength="4" placeholder="Ano" id="ano" class="input">
+            </div>
+
+            <label for="sexo"><b>Sexo</b></label>
+            <select id="sexo" class="input">
+                <option>Sou do sexo...</option>
+                <option>Maculino</option>
+                <option>Feminino</option>
+                <option>Prefiro não declarar</option>
+            </select>
+
+            <label for="celular"><b>Celular</b></label>
+            <input type="text" minlength="8" maxlength="14" id="celular" class="input">
+        </form>
+    </body>
+</html>

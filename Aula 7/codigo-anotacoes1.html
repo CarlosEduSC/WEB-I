@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Formularios</title>
+    <!-- reaproveitamento de codigo -->
+    <link href="forms.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+
+        <form class="form-col-2">
+            <label for="nome">Nome</label>
+            <input required minlength="2" maxlength="80" 
+            type="text" name="nome" id="nome">
+            
+            <label>Idade</label>
+            <input required type="number" min="18" max="99" name="idade">
+
+            <label>Email</label>
+            <input type="email" name="email" required autocomplete="off"
+            placeholder="Digite seu email">
+            
+            <label>Estado</label>
+            <select name="estado">
+                <option value="RS">RS</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+            </select>
+
+            <label>Comentarios</label>
+            <textarea rows="5" cols="30" placeholder="sua opinião é importante"></textarea>
+            
+            <label>Senha</label>
+            <input type="password" name="senha">
+
+            <label>Serviço prestado</label>
+            <div class="options">
+                <label>
+                    <input type="radio" value="ruim" name="nota">
+                    Ruim
+                </label>
+                <label>
+                    <input type="radio" value="bom" name="nota">
+                    Bom
+                </label>
+                <label>
+                    <input type="radio" value="otimo" name="nota">
+                    Otimo
+                </label>
+            </div>
+
+            <label>Linguagem favorita?</label>
+            <div class="options">
+                <label>
+                    <input type="checkbox" value="0" name="linguagem[]">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" value="1" name="linguagem[]">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" value="2" name="linguagem[]">
+                    JS
+                </label>
+            </div>
+
+            <input class="button" type="submit" 
+            value="enviar">
+        </form>
+    </div>
+
+</body>
+</html>

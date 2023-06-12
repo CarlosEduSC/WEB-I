@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Aula 7 - Exercicio 1</title>
+
+        <style>
+            .container{
+                color: darkblue;
+                background-color: lightgreen;
+                border: 1px solid green;
+                margin: auto;
+                width: 30%;
+                padding: 20px;
+            }
+
+            .formcol2{
+                display: grid;
+                grid-template-columns: max-content max-content;
+                gap: 10px;
+            }
+
+            .formcol2 label{
+                justify-self: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <form class="formcol2">
+                    <label>Data de nascimento:</label>
+                    <input type="date">
+                    
+                    <label>Escolaridade:</label>        
+                    <select>
+                        <option>Ensino Fundamental</option>
+                        <option>Ensino Médio</option>
+                        <option>Ensino Superior</option>
+                    </select>
+                    
+                    <label>Situação da Escolaridade:</label>
+                    <div>
+                        <input type="radio">Completo
+                        <input type="radio">Incompleto
+                    </div>
+                    
+                    <label>Nacionalidade:</label>
+                    <select>
+                        <option>Brasil</option>
+                        <option>Paraguai</option>
+                        <option>Argentina</option>
+                    </select>
+                    
+                    <label>UF onde nasceu:</label>
+                    <select>
+                        <option>Paraná</option>
+                        <option>Santa Catarina</option>
+                        <option>Rio Grande do Sul</option>
+                    </select>
+            </form>
+            
+            <input type="submit">
+        </div>
+    </body>
+</html>

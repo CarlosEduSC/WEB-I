@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <style>
+        #poster{
+            width: 300px;
+        }
+        button{display:block;}
+    </style>
+</head>
+<body>
+   <div>
+       <button onclick="proximo()" id="next">Next</button>
+       <img id="poster" src="../imgs/jungle01.jpg">
+   </div>
+<script>
+    var count = 0;
+     // vetor de imagens
+    const imagens = ["../imgs/jungle01.jpg", 
+                   "../imgs/jungle02.jpg",
+                   "../imgs/bussola02.png"
+                ];
+    var poster = document.querySelector("#poster");
+
+    function proximo(){
+        if (count < imagens.length-1)
+            count++;
+        // atualiza src da imagem    
+        poster.setAttribute("src", imagens[count]);
+    }
+   
+    /* exemplo: percorrer o vetor */                
+    /*for(i=0; i<imagens.length; i++){
+        console.log(imagens[i]);
+    }
+    */
+
+</script>
+</body>
+</html>

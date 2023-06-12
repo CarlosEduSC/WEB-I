@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e eventos</title>
+    <style>
+        #themes div{
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .dark{
+            background: #000;
+            color: azure;
+        }
+        .normal{
+            background: lightcyan;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div id="themes">
+        <div onclick="changeTheme('dark')" class="dark"></div>
+        <div onclick="changeTheme('ligth')" class="ligth"></div>
+        <div onclick="changeTheme('normal')" class="normal"></div>
+    </div>
+    
+    <!-- criar um input, 
+        usuario digita o nome da cor 
+        aplica a cor na body
+        document.querySelector | style para a cor
+    -->
+
+<!-- queremos ler um valor de um input que o 
+    usuario digitou -->
+<input id="preco" placeholder="digite o preço"/>
+<button id="aplicar" onclick="calcDesconto()">
+    aplicar desconto
+</button>
+<div id="resultado" 
+style='border:1px solid #000;display:none'></div>
+
+<p>um texto de exemplo qualquer</p>
+
+<script>
+function changeTheme(themeClass){
+    let body = document.querySelector("body");
+    // body.style.backgroundColor = 'black';
+    // setar a classe css da tag body:
+    body.setAttribute("class", themeClass );
+}
+
+// (1) adicionar um evento ao button
+    // usando onclick
+// (2) pegar o valor input
+function calcDesconto(){
+    // tagPreco é um objeto que representa a input#preco
+    let tagPreco = document.querySelector("#preco");
+    // value retorna o valor da input
+    valor = tagPreco.value;
+    desconto = valor * 0.9;
+    let res = document.getElementById("resultado");
+    res.innerHTML = desconto;
+    // exibe a div resultado:
+    res.style.display = 'block'; // tornar a div visivel
+    // equivalente a regra css:
+    /*
+    div.resultado{
+        display: block;
+    }
+    */
+    //alert(valor);
+}
+// (3) calcular o desconto e jogar na div resultado
+</script>
+</body>
+</html>
