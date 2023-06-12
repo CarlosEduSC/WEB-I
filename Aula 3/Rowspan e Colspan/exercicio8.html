@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Rowspan e Colspan - Exercicio 8</title>
+
+        <style>
+            table,th,td {
+                border-spacing: 0;
+                border: 1px black solid;
+            }
+
+            .titulo {
+                background: rgb(255, 255, 133);
+            }
+
+            .subtitulo {
+                background: lightgreen;
+            }
+
+            .aside {
+                background: lightblue;
+                text-align: left;
+            }
+
+            .total {
+                text-align: right;
+            }
+
+            .valor {
+                background: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th class="titulo" colspan="3">Relatório de Despesas</th>
+            </tr>
+            <tr>
+                <th class="subtitulo">Tipo de Despesa</th>
+                <th class="subtitulo">Descrição</th>
+                <th class="subtitulo">Valor</th>
+            </tr>
+            <tr>
+                <td class="aside" rowspan="5">Doméstica</td>
+                <td>Supermercado</td>
+                <td>R$ 780,00</td>
+            </tr>
+            <tr>
+
+                <td>Aluguel</td>
+                <td>R$ 850,00</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>R$ 120,00</td>
+            </tr>
+            <tr>
+                <td>Celular</td>
+                <td>R$ 69,00</td>
+            </tr>
+            <tr>
+                <td>Condomínio</td>
+                <td>R$ 250,00</td>
+            </tr>
+            <tr>
+                <td class="aside" rowspan="3">Externa</td>
+                <td>Combustível</td>
+                <td>R$ 380,00</td>
+            </tr>
+            <tr>
+                <td>Almoço</td>
+                <td>R$ 340,00</td>
+            </tr>
+            <tr>
+                <td>Academia</td>
+                <td>110,00</td>
+            </tr>
+            <tr>
+                <td class="total" colspan="2">Total</td>
+                <td class="valor">R$ 2.899,00</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - tabelas</title>
+
+    <style>
+        /* p é o seletor*/
+        
+        p {
+            font-family: 'Courier New';
+            /* font-family: Verdana; */
+            font-weight: bold;
+            color: rosybrown;
+            font-size: 18px;
+            /* forma reduzida de criar uma regra */
+            border: 1px solid rebeccapurple;
+            /* equivalente a esses 3 propriedades*/
+            /*
+            border-width: 1px;
+            border-style: solid;
+            border-color: rebeccapurple;
+            */
+            /* definição da margem (top, bottom, left, right)*/
+            margin: 20px;
+            margin-bottom: 30px;
+            /* margem interna (espaçamento) */
+            padding: 10px 20px;
+            padding: 10px 5px 20px 15px;
+            padding: 10px;
+            /* mesmo efeito da regra acima */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        /* regra associada a tag p */
+        
+        p.especial {
+            background-color: aquamarine;
+        }
+        /* regra generica */
+        
+        .destaque {
+            background-color: royalblue;
+        }
+        /* regra por ID */
+        
+        #titulo {
+            color: cadetblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo">Titulo principal</h1>
+
+    <p>Index content 1</p>
+
+    <p class='destaque'>Index content 2</p>
+
+    <p class="especial">Index content 3</p>
+
+</body>
+
+</html>
