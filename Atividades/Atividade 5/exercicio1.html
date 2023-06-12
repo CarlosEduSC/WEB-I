@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Rowspan e Colspan - Exercicio 1</title>
+
+        <style>
+            table,th,td {
+                border: 1px black solid;
+                border-spacing: 0px;
+            }
+            
+            .titulo {
+                background: rgb(243,213,124);
+            }
+
+            .subtitulo {
+                background: #97CBFA;
+            }
+
+            .footer {
+                background: #E6e6e6;
+                font-size: 7pt;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+    <table>
+        <tr>
+            <th class="titulo" colspan="2">Vendas do 1⁰ Semestre</th>
+        </tr>
+        <tr>
+            <th class="subtitulo">Modelo</th>
+            <th class="subtitulo">Unidades</th>
+        </tr>
+        <tr>
+            <td>Palip</td>
+            <td>585.240</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td>529.894</td>
+        </tr>
+        <tr>
+            <td class="footer" colspan="2">Fonte: Agencia Reuters</td>
+        </tr>
+    </table>
+    </body>
+</html>

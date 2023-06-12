@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Aula 3 - Exercicio 6</title>
+
+        <style>
+            table {
+                border: 1px #CCC solid;
+            }
+
+            th {
+                background-color: #5EFB6E;
+                text-align: center;
+                border-spacing: 0px;
+            }
+
+            td {
+                text-align: center;
+            }
+
+            img {
+                height: 100px;
+            }
+
+            .centro {
+                background-color: lightblue;
+                border-bottom: 1px #CCC solid;
+            }
+
+            .vilaA {
+                background-color: #CCC;
+                border-bottom: 1px #CCC solid;
+            }
+            
+            .right {
+                border-top: 1px #CCC solid;
+                border-right: 1px #CCC solid;
+            }
+            
+            .left {
+                border-top: 1px #CCC solid;
+                border-left: 1px #CCC solid;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th colspan="2">Casas no centro</th>
+            </tr>
+            <tr>
+                <td class="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9P9cExFpuMzfuQ3mV2iS7VjzfgijicjNrba-KQfZrFrLOvTrOHoQzytkuwifGZaS_Z8&usqp=CAU"/></td>
+                <td class="right"><img src="https://imgs.kenlo.io/VWRCUkQ2Tnp3d1BJRDBJVe1szkhnWr9UfpZS9ftWwjXgr7v5Znen3XVcMHllDVRJJeIbi3YwVYEtu1p-wsljuxMBjZE4fbOaogue8oyO5c6+rRSk5IjblaOHzZ7aZOHV14Y56YTtAlO1iKs9aOcXCXpSZ8l3HhbPWrWHAEJAu2GSpV7wSJttfVBL2Blrn05o3Hi1f6Ss7kEL5TusC+-xoxOWdIHFHkFkKLMNAdIz7EIJ8RC9W0J8p0oF7Jq1qTLdaOenJpi9yWxNWAZ8vJq+Tqi619jCLJU4Vr0lNm4L5VMZWe0S2-TJT-8+5wEDqv3JFhXchgzWgPAoc9j0Qd9NlacAiAjLGbsY6Rq8wNaVhfOsaBiFZVNu9uuf-Pu1Pq+kTKv0OWSjh5ZN5pPfbYYZNYW1TzwHUTQ7Yj0DqUqm6uY=.jpg"/></td>
+            </tr>
+            <tr>
+                <td class="centro">Imóvel a venda:<br>R$348.000</td>
+                <td class="centro">Imóvel a venda:<br>R$680.000</td>
+            </tr>
+            <tr>
+                <th colspan="2">Casas na vila A</th>
+            </tr>
+            <tr>
+                <td class="left"><img src="https://mapio.net/images-immo-detalhe/1287122/casa-a-venda-331-m2-por-r-1350000-vila-a-foz-do-iguacu-pr-img-0.jpeg"/></td>
+                <td class="right"><img src="data:image/jpeg;base64,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"/></td>
+            </tr>
+            <tr>
+                <td class="vilaA">Imóvel para aluguel:<br>R$1200</td>
+                <td class="vilaA">Imóvel para aluguel:<br>R$1300</td>
+            </tr>
+        </table>
+    </body>
+</html>

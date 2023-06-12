@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Aula 6 - Exercicio 4</title>
+
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                grid-template-rows: 15vh 40vh 35vh 10vh;
+            }
+
+            .menu {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                background: rgb(201, 165, 114);
+                grid-column: 1/2;
+            }
+
+            .items {
+                background: white;
+                color: blue;
+                padding: 10px;
+                height: 20px;
+                margin: 15px;
+            }
+
+            .items:hover {
+                background: rgb(153, 238, 153);
+            }
+
+            header {
+                grid-column: 1/3;
+                text-align: center;
+                background: rgb(201, 165, 114);
+            }
+
+            main {
+                padding: 15px;
+                grid-row: 2/3;
+                grid-column: 2/3;
+            }
+
+            footer {
+                grid-column: 1/3;
+                grid-row: 4/5;
+                background: #ccc;
+                text-align: center;
+            }
+
+            h1,h2 {
+                color: darkblue;
+            }
+
+            p {
+                font-size: 15pt;
+            }
+
+            a {
+                color: yellow;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h1>Desenvolvimento de Sistemas</h1>
+
+                <a href="https://www.google.com.br/" target="_blank">Google</a> | 
+                <a href="https://reitoria.ifpr.edu.br/" target="_blank">IFPR</a> | 
+                <a href="https://www.uol.com.br/" target="_blank">UOL</a>
+            </header>
+
+            <div class="menu">
+                <div class="items">Produtos</div>
+                <div class="items">Cliente</div>
+                <div class="items">Help-Desk</div>
+                <div class="items">Informações</div>
+            </div>
+
+            <main>
+                <h2>Introdução</h2><hr>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h2>Desenvolvimento</h2><hr>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </main>
+
+            <footer>
+                <p>Site desenvolvido por tectronica S.A.</p>
+            </footer>
+        </div>
+    </body>
+</html>
