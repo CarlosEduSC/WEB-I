@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Div</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        #header {
+            border: 1px solid red;
+            text-align: center;
+            background-image: url(../imgs/bg-header.jpg);
+        }
+        
+        #container {
+            border: 1px solid black;
+            width: 700px;
+            margin: auto;
+        }
+        
+        #content {
+            border: 1px solid blue;
+            padding: 20px;
+        }
+        
+        #footer {
+            border: 1px solid green;
+            text-align: center;
+        }
+        
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            /* por padrão a div quebra linha - display:block */
+            /* mudamos o display para que a div "compartilhe a linha " */
+            display: inline-block;
+            width: 200px;
+            margin-right: 20px;
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+        
+        .bold {
+            font-weight: bold;
+            color: blueviolet;
+        }
+        /* capturar o evento do mouse */
+        
+        .card:hover {
+            background: salmon;
+            transform: translateX(10px) translateY(20px);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="header">
+            <h1>HEADER</h1>
+
+        </div>
+
+        <div id="content">
+            <h1>CONTEÚDO</h1>
+
+            <div class='card'>
+                <p>Lorem <span class="bold">ipsum dolor</span> sit amet consectetur, adipisicing elit. Vero et consequuntur, voluptate odit rem molestias velit! Hic architecto quia rem unde ut temporibus nihil. At corporis delectus aut ad impedit!</p>
+            </div>
+
+            <div class='card' style="/*display:none;*/">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero et consequuntur, voluptate odit rem molestias velit! Hic architecto quia rem unde ut temporibus nihil. At corporis delectus aut ad impedit!</p>
+            </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla beatae sunt quibusdam? Expedita alias voluptatibus asperiores inventore quibusdam modi, quaerat veritatis, consectetur, vitae consequuntur delectus optio nihil excepturi
+                odio.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, recusandae incidunt. Ut non minima suscipit libero ipsam, soluta corrupti, dolores consequuntur dolorem quasi tempore quisquam, rerum vitae! Placeat, magni vero!</p>
+
+        </div>
+
+        <div id="footer">
+            FOOTER
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

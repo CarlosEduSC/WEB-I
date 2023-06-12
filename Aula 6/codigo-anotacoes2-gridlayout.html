@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            font-family: 'Lato';
+        }
+        /* regra css - por classe*/
+        
+        .container {
+            /* usar esquema de layout grid */
+            display: grid;
+            /* define quantas colunas o grid tem */
+            grid-template-columns: 100px 100px;
+            /* espaçamento entre os items */
+            gap: 3px;
+            /* espaçamento das linhas */
+            /* somente a primeira linha */
+            grid-template-rows: 50px;
+        }
+        
+        .item {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- no grid layout começa por um grid 
+    container-->
+    <div class="container">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+        <div class="item">07</div>
+        <div class="item">08</div>
+        <div class="item">09</div>
+    </div>
+
+</body>
+
+</html>

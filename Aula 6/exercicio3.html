@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Aula 6 - Exercicio 3</title>
+
+        <style>
+            .container1 {
+                display: grid;
+                grid-template-columns: 0.5fr 4fr;
+                grid-template-rows: 13vh 80vh 10vh;
+            }
+
+            .container2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .right,.middle {
+                border-top: #CCC  2px solid;
+                border-left: #CCC  2px solid;
+                padding: 20px;
+            }
+
+            .left {
+                border-right: #CCC  2px solid;
+                border-top: #CCC  2px solid;
+                padding: 20px;
+            }
+
+            .conteudo {
+                height: 250px;
+                font-size: 15pt;
+                padding-left: 20px;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            header {
+                background-image: url("bg-header.jpg");
+                text-align: center;
+                grid-column: 1/3;
+            }
+
+            main {
+                border: 2px green solid;
+            }
+
+            aside {
+                border-left: 2px #CCC solid;
+                font-weight: bold;
+                font-size: 15pt;
+            }
+
+            footer {
+                text-align: center;
+                border: 2px rgb(192, 78, 78) solid;
+                grid-column: 1/3;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="container1">
+            <header>
+                <h1>HEADER_2</h1>
+            </header>
+            
+            <aside>
+                <p>opção A</p>
+                <p>opção B</p>
+                <p>opção C</p>
+                <p>opção D</p>
+            </aside>
+
+            <main>
+                <div class="conteudo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            
+                <div class="container2">
+                    <div class="left">
+                        <h3>Jungle</h3>
+
+                        <img src="jungle01.jpg" height="190px" width="280px"/>
+                    </div>
+
+                    <div class="middle">
+                        <h3>One Tittle</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="right">
+                        <h3>Second Tittle</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <h2>FOOTER</h2>
+            </footer>
+        </div>
+    </body>
+</html>

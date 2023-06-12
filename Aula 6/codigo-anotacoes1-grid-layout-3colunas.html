@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <title>Grid layout</title>
+    <style>
+        body {
+            font-family: 'Lato';
+        }
+        /* regra css - por classe*/
+        
+        .main {
+            /* px é uma unidade medida - pixel */
+            width: 700px;
+            /* outras unidade de medida: %, em, fr */
+            margin: auto;
+        }
+        
+        .container {
+            /* usar esquema de layout grid */
+            display: grid;
+            /* define quantas colunas o grid tem */
+            grid-template-columns: 100px 1fr 100px;
+            /* espaçamento entre os items */
+            /* somente a primeira linha */
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "header header header" 
+            "sideLeft content sideRight" 
+            "footer footer footer";
+        }
+        
+        .header {
+            grid-area: header;
+            text-align: center;
+        }
+        
+        .sideLeft {
+            grid-area: sideLeft;
+            padding-left: 10px;
+        }
+        
+        .content {
+            grid-area: content;
+        }
+        
+        .sideRight {
+            grid-area: sideRight;
+        }
+        
+        .footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        
+        .card {
+            margin: 20px;
+            padding: 5px 10px;
+            background: #e9ecef3d;
+            border: 1px solid #d8d8df;
+        }
+        
+        #menu {
+            list-style: none;
+            padding: 0;
+        }
+        
+        h1 {
+            font-family: 'Saira', sans-serif;
+        }
+        
+        div {
+            border: 1px dashed #c0bdbd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- representa o site -->
+    <div class="main">
+        <!-- grid container-->
+        <div class="container">
+            <div class="header">
+                <h1>grid layout</h1>
+            </div>
+            <div class="sideLeft">
+                <p>Menu</p>
+                <ul id="menu">
+                    <li>
+                        <a href="#">Item1</a>
+                    </li>
+                    <li>
+                        <a href="#">Item2</a>
+                    </li>
+                    <li>
+                        <a href="#">Item3</a>
+                    </li>
+                    <li>
+                        <a href="#">Item4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis ipsam facilis ullam mollitia sit quisquam recusandae, molestiae, magni officia fugit reiciendis provident, accusamus blanditiis sed commodi quis neque in.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis ipsam facilis ullam mollitia sit quisquam recusandae, molestiae, magni officia fugit reiciendis provident, accusamus blanditiis sed commodi quis neque in.</p>
+                </div>
+            </div>
+            <div class="sideRight">
+                <p>Feed</p>
+            </div>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

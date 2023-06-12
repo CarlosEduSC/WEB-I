@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <style>
+        .data {
+            border: 1px solid black;
+            /* eliminar o espaço entre as celulas */
+            border-collapse: collapse;
+        }
+        /* regra que atinge uma lista de tags separadas por virgula  */
+        
+        .data td,
+        th {
+            padding: 5px 10px;
+        }
+        /* regra hierarquica - [table.data + td] */
+        
+        .data td {
+            border: 1px solid saddlebrown;
+        }
+        /* classe + tag */
+        
+        .data caption {
+            font-style: italic;
+            color: lightcoral;
+        }
+        
+        .data th {
+            background-color: antiquewhite;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <p>Index content</p>
+
+    <table class="data">
+        <caption>
+            Censo Brasil
+        </caption>
+        <tr>
+            <th>
+                Estado
+            </th>
+            <th>
+                Cidade
+            </th>
+            <th>
+                Habitantes
+            </th>
+        </tr>
+
+        <tr>
+            <td colspan="3">ano 2021</td>
+        </tr>
+
+        <!-- inicia a linha -->
+        <tr>
+            <!-- coloca os valores de cada célula -->
+            <td rowspan="2">
+                PR
+            </td>
+            <td>
+                Foz do Iguaçu
+            </td>
+            <td>
+                260 mil
+            </td>
+        </tr>
+        <tr>
+            <!-- coloca os valores de cada célula -->
+
+            <td>
+                Curitiba
+                <ol>
+                    <li>
+                        primeiro
+                    </li>
+                    <li>
+                        segundo
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Rural</th>
+                        <th>Urbana</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            1 milhão
+                        </td>
+                        <td>
+                            7 milhões
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
